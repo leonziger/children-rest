@@ -13,12 +13,15 @@
 }
 
 ::placeholder {
-  font-size: 16px;
-  color: #23292e;
-  letter-spacing: 0.32px;
+  font-family: 'Circe', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
+  color: #999;
+  //padding: 0 60px;
 
-  @media(max-width: 375px){
-    font-size: 14px;
+  @media(max-width: 575px){
+    font-size: 16px;
   }
 }
 
@@ -97,4 +100,21 @@ button {
   transition: $delay;
 }
 
+h2, .like_h2 {
+  color: #001e28;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 25px;
+  text-align: center;
 
+  @media(max-width: 767px) {
+    font-size: 28px;
+    padding-bottom: 22px;
+  }
+  @media(max-width: 575px) {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+}
