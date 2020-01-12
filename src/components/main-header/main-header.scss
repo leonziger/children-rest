@@ -1,0 +1,89 @@
+.main-header {
+  display: flex;
+  padding-bottom: 9px;
+
+  @media(max-width: 600px) {
+    min-height: 60px;
+  }
+
+  &_sticky {
+    background: darken(#00bff3, 5%);
+    min-height: 60px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-icon {
+      width: 70px;
+      height: 70px;
+    }
+
+    &-slogan {
+      padding-left: 31px;
+      max-width: 170px;
+      color: #001e28;
+      font-family: 'Circe', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.25;
+
+      @media(max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  &__callback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      padding-right: 28px;
+
+      @media(max-width: 720px) {
+        padding-right: 10px;
+      }
+
+      @media(max-width: 500px) {
+        display: none;
+      }
+    }
+
+    &-title {
+      color: #001e28;
+      font-family: 'Circe', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.25;
+    }
+
+    &-phone {
+      display: block;
+      color: #001e28;
+      font-family: 'Roboto Slab', serif;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1.25;
+      letter-spacing: 0.5px;
+    }
+
+  }
+
+  &__menu-toggle {
+    display: none;
+    align-self: center;
+
+    @media(max-width: 768px) {
+      display: block;
+    }
+  }
+}
