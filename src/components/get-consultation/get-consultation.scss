@@ -49,14 +49,17 @@
 
     @media(max-width: 575px) {
       height: 45px;
+      border: 1px solid #001e28;
     }
 
     &-error {
-      border: 2px solid #f7b516;
+      border: 1px solid #ffaf02;
+      color: #ffaf02;
     }
 
     &-valid {
-      border: 2px solid transparent;
+      border: 1px solid #001e28;
+      color: #001e28;
     }
 
     &-wrapper {
@@ -153,19 +156,21 @@
       padding: 19px 48px;
       border-radius: 28px;
       font-size: 12px;
+      align-self: flex-start;
 
       @media(max-width: 575px) {
         padding: 14px 48px;
       }
     }
-
   }
 
   &__error-message {
-    display: none;
-    color: #000;
+    display: block;
+    color: #ffaf02;
+    font-weight: 400;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
   }
+
 }
