@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "author": "Leonid Zichkov",
   "private": true,
-  "homepage": "https://leonziger.github.io/childrens-rest",
+  "homepage": "https://leonziger.github.io/children-rest",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leonziger/childrens-rest.git"
+    "url": "git+https://github.com/leonziger/children-rest.git"
   },
   "bugs": {
-    "url": "https://github.com/leonziger/childrens-rest/issues"
+    "url": "https://github.com/leonziger/children-rest/issues"
   },
   "scripts": {
     "start": "gulp",

@@ -1,0 +1,185 @@
+.choose-ticket {
+  min-height: 880px;
+  display: flex;
+  align-items: center;
+
+  &__separator {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+    height: 5px;
+    background-color: #ffaf02;
+
+    @media(max-width: 767px) {
+      display: none;
+    }
+  }
+  &__tabs {
+    margin-top: 67px;
+    width: 100%;
+  }
+
+  &__tab {
+    transition: 0.3s;
+
+    &-title {
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 20px 20px 0 0;
+      background-color: #d8f0f0;
+      padding: 15px;
+      line-height: 1.25;
+      letter-spacing: 0.2px;
+      height: 100%;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      .choose-ticket__tab-title {
+        color: white;
+        background-color: #ffaf02;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__camps {
+    display: none;
+    margin-top: 42px;
+    width: 100%;
+    transition: 0.3s;
+
+    &.russia {
+      .choose-ticket__camp-image {
+        background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../images/russiancamp1.jpg);
+        width: 340px;
+        height: 245px;
+      }
+    }
+
+    &.abroad {
+      .choose-ticket__camp-image {
+        background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../images/foreigncamp1.jpg);
+        width: 340px;
+        height: 245px;
+      }
+    }
+  }
+
+  &__camp {
+    display: block;
+    text-decoration: none;
+    color: #001e28;
+    text-align: center;
+    font-family: 'Circe', sans-serif;
+    border: 2px solid #d8f0f0;
+    padding: 14px 10px 31px;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: #ffaf02;
+
+      .choose-ticket__camp-link {
+        &:before {
+          height: 17px;
+        }
+      }
+    }
+
+    &-image {
+      background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+              url(../images/camp1.png);
+      width: 340px;
+      height: 245px;
+    }
+    &-place {
+      position: relative;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-infoblock {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: #fff;
+      position: absolute;
+      left: 0;
+      bottom: 9px;
+      padding: 0 13px;
+
+      @media(max-width: 1199px) {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+    }
+
+    &-area {
+      padding-left: 10px;
+      letter-spacing: -0.5px;
+    }
+
+
+    &-name {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    &-desc {
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 29px;
+    }
+
+    &-link {
+      font-size: 18px;
+      font-weight: 700;
+      position: relative;
+      transition: 0.3s;
+
+      &:before {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        content:'';
+        width: 95px;
+        height: 6px;
+        bottom: -8px;
+        background-color: #ffaf02;
+      }
+    }
+
+    &-linktext {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.active-tab {
+  .choose-ticket__tab-title {
+    color: white;
+    background-color: #ffaf02;
+    letter-spacing: 0.5px;
+  }
+}
+
+.active-content {
+  display: block;
+}
